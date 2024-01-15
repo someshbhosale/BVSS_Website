@@ -347,10 +347,10 @@ nav{
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 10px;
+    margin-top: 10px;
 }
-.top-header span{
-    color: #999;
-}
+
+
 h3{
     font-size: 20px;
     font-weight: 600;
@@ -376,16 +376,11 @@ h3{
     font-size: 15px;
     color: #777;
 }
-.about-btn button{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
-    border-radius: 30px;
-}
-.about-btn button:hover{
-    background: var(--first-color-hover);
+.about-info img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .about-info-right{
@@ -405,6 +400,12 @@ h3{
     font-size: 15px;
     color: #777;
 }
+.about-info-right img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 .about-info-top{
     position: relative;
@@ -423,8 +424,90 @@ h3{
     font-size: 15px;
     color: #777;
 }
+.about-info-top img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
+/* Facilities left top right*/
 
+.facilities-info-left{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.facilities-info-left p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+
+.facilities-info-left img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.facilities-info-right{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.facilities-info-right p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+
+.facilities-info-right img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.facilites-info-top{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px 70px;
+    padding-inline: 20px;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.facilites-info-top p{
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+}
+.facilites-info-top img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
     margin: 10px;
@@ -459,12 +542,13 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 30%;
-    height: 250px;
+    width: 45%;
+    height: 400px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .project-box>i{
     font-size: 50px;
@@ -681,7 +765,7 @@ footer{
         justify-content: center;
         width: 100%;
     }
-    .about-info, .contact-info{
+    .about-info, .facilites-info-top,.facilities-info-left,.facilities-info-right,.contact-info{
         width: 100%;
     }
     .project-container{

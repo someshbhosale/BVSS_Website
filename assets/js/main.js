@@ -65,6 +65,9 @@ sr.reveal('.featured-text-info',{delay: 200})
 sr.reveal('.featured-text-btn',{delay: 200})
 sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
+sr.reveal('.about-info-top',{delay: 300})
+sr.reveal('.contact-info',{delay: 300})
+sr.reveal('.facilities-info-top',{delay: 300})
 
 
 /* -- PROJECT BOX -- */
@@ -84,9 +87,10 @@ duration: 2000,
 reset: true
 })
 
-srLeft.reveal('.about-info',{delay: 100})
+srLeft.reveal('.about-info',{delay: 300})
 srLeft.reveal('.contact-info',{delay: 100})
-
+srLeft.reveal('.map-left-animation',{delay: 100})
+srLeft.reveal('.facilities-info-left',{delay: 200})
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
 origin: 'right',
@@ -97,63 +101,10 @@ reset: true
 
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
+srRight.reveal('.about-info-right',{delay:300})
+srRight.reveal('.contact-info',{delay: 100})
+srRight.reveal('.facilities-info-right',{delay: 100})
 
-/*right animation*/
-/* -- ABOUT INFO & CONTACT INFO -- */
-const srRightAbout = ScrollReveal({
-  origin: 'right', // Change from 'left' to 'right'
-  distance: '80px',
-  duration: 2000,
-  reset: true
-});
-
-srRightAbout.reveal('.about-info-right', { delay: 100 });
-srRightAbout.reveal('.contact-info', { delay: 100 });
-
-/* -- ABOUT SKILLS & FORM BOX -- */
-const srRightSkills = ScrollReveal({
-  origin: 'right', // Change from 'right' to 'left'
-  distance: '80px',
-  duration: 2000,
-  reset: true
-});
-
-srRightSkills.reveal('.skills-box', { delay: 100 });
-srRightSkills.reveal('.form-control', { delay: 100 });
-
-
-/* top to down animation*/
-
-const srTopAbout = ScrollReveal({
-  origin: 'top', // Change from 'left' to 'top'
-  distance: '80px',
-  duration: 2000,
-  reset: true
-});
-
-srTopAbout.reveal('.about-info-top', { delay: 100 });
-srTopAbout.reveal('.contact-info', { delay: 100 });
-
-/* -- ABOUT SKILLS & FORM BOX -- */
-const srTopSkills = ScrollReveal({
-  origin: 'top', // Change from 'right' to 'top'
-  distance: '80px',
-  duration: 2000,
-  reset: true
-});
-
-srTopSkills.reveal('.skills-box', { delay: 100 });
-srTopSkills.reveal('.form-control', { delay: 100 });
-
-
-const srMapLeft = ScrollReveal({
-  origin: 'left',
-  distance: '80px',
-  duration: 2000,
-  reset: true
-  })
-  
-  srLeft.reveal('.map-left-animation',{delay: 100})
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
