@@ -10,12 +10,44 @@ function myMenuFunction(){
 }
 //dark mode
 
-const body = document.querySelector("body"),
-toggleSwitch = document.getElementById("toggle-switch");
-toggleSwitch.addEventListener('click', () => {
-body.classList.toggle("dark");
-})
+const body = document.querySelector("body");
+const toggleSwitch = document.getElementById("toggle-switch");
 
+// Check if dark mode preference is stored in local storage
+const isDarkMode = localStorage.getItem("darkMode") === "enabled";
+
+// Set initial theme based on user preference
+if (isDarkMode) {
+    body.classList.add("dark");
+}
+
+// Toggle dark mode on button click
+toggleSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
+
+    // Update local storage with user preference
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        localStorage.setItem("darkMode", "disabled");
+    }
+});
+
+// to close the navbar in mobile view
+function myMenuFunction() {
+  var menuBtn = document.getElementById("myNavMenu");
+
+  if (menuBtn.className === "nav-menu") {
+      menuBtn.className += " responsive";
+  } else {
+      menuBtn.className = "nav-menu";
+  }
+}
+
+function closeMobileMenu() {
+  var menuBtn = document.getElementById("myNavMenu");
+  menuBtn.className = "nav-menu";
+}
 
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
@@ -90,7 +122,7 @@ reset: true
 srLeft.reveal('.about-info',{delay: 300})
 srLeft.reveal('.contact-info',{delay: 100})
 srLeft.reveal('.map-left-animation',{delay: 100})
-srLeft.reveal('.facilities-info-left',{delay: 200})
+
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
 origin: 'right',
@@ -104,6 +136,17 @@ srRight.reveal('.form-control',{delay: 100})
 srRight.reveal('.about-info-right',{delay:300})
 srRight.reveal('.contact-info',{delay: 100})
 srRight.reveal('.facilities-info-right',{delay: 100})
+
+/* facilities scrolling effect */
+
+const srFacilities = ScrollReveal({
+  origin: 'left',
+  distance: '80px',
+  duration: 2000,
+  reset: true
+});
+
+srFacilities.reveal('.facilities-info-left', {delay:300});
 
 
 /* ----- CHANGE ACTIVE LINK ----- */
