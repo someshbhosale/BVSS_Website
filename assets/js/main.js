@@ -74,7 +74,7 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["The BVSS Maratha Student's Home"],
+  strings : ["The BVSS MARATHA STUDENT'S HOME"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
@@ -99,7 +99,7 @@ sr.reveal('.social_icons',{delay: 200})
 sr.reveal('.featured-image',{delay: 300})
 sr.reveal('.about-info-top',{delay: 300})
 sr.reveal('.contact-info',{delay: 300})
-sr.reveal('.facilities-info-top',{delay: 300})
+
 
 
 /* -- PROJECT BOX -- */
@@ -123,6 +123,7 @@ srLeft.reveal('.about-info',{delay: 300})
 srLeft.reveal('.contact-info',{delay: 100})
 srLeft.reveal('.map-left-animation',{delay: 100})
 
+
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
 origin: 'right',
@@ -135,42 +136,31 @@ srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
 srRight.reveal('.about-info-right',{delay:300})
 srRight.reveal('.contact-info',{delay: 100})
-srRight.reveal('.facilities-info-right',{delay: 100})
 
-/* facilities scrolling effect */
 
-const srFacilities = ScrollReveal({
-  origin: 'left',
-  distance: '80px',
-  duration: 2000,
-  reset: true
-});
 
-srFacilities.reveal('.facilities-info-left', {delay:300});
+
+
+
 
 
 /* ----- CHANGE ACTIVE LINK ----- */
 
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
-const scrollY = window.scrollY;
+  const scrollY = window.scrollY;
 
-sections.forEach(current =>{
-  const sectionHeight = current.offsetHeight,
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 50,
-    sectionId = current.getAttribute('id')
+      sectionId = current.getAttribute('id');
 
-  if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) { 
-
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-
-  }  else {
-
-    document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
-  }
-})
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link');
+    } else {
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link');
+    }
+  });
 }
-
-window.addEventListener('scroll', scrollActive)
+window.addEventListener('scroll', scrollActive);
