@@ -241,7 +241,7 @@ nav{
     
 }
 .typedText {
-    font-family: 'YourChosenFont', sans-serif; /* Replace 'YourChosenFont' with the desired font family */
+    font-family:  sans-serif; /* Replace 'YourChosenFont' with the desired font family */
     text-transform: capitalize;
     color: #fd981c; /* Updated color code */
     text-shadow: 0px 2px 4px rgb(112, 58, 4); /* Adjust shadow values as needed */
