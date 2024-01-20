@@ -102,6 +102,7 @@ sr.reveal('.contact-info',{delay: 300})
 
 
 
+
 /* -- PROJECT BOX -- */
 sr.reveal('.project-box',{interval: 200})
 

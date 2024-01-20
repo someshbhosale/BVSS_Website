@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>The BVSS Maratha Student's Home</title>
+    <style>
+        /* Add this to your existing CSS file or create a new one */
+
+/* ----- PHOTO GALLERY ----- */
+/* Add this to your existing CSS file or create a new one */
+
+/* ----- PHOTO GALLERY ----- */
+/* ----- PHOTO GALLERY ----- */
+#gallery {
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-image {
+    opacity: 0.7;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+
+            <div class="nav-logo">
+                <a href="/index.html">
+                    <p class="nav-name"> The BVSS</p>
+                </a>
+
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="/index.html" class="nav-link ">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="/index.html#about" class="nav-link">Founders</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="/index.html#projects" class="nav-link">Events</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="/routes/facilites.html" class="nav-link">Facilities</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="/index.html#contact" class="nav-link">Contact Us</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+
+
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <main class="wrapper">
+            
+            <section class="section" id="gallery">
+                <div class="top-header">
+                    <h1>Photo Gallery</h1>
+                </div>
+                <div class="gallery-container">
+                    <!-- Image 1 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 1" class="gallery-image">
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 2" class="gallery-image">
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 3" class="gallery-image">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 1" class="gallery-image">
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 2" class="gallery-image">
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 3" class="gallery-image">
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 1" class="gallery-image">
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 2" class="gallery-image">
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="gallery-item">
+                        <img src="/assets/images/img.png" alt="Image 3" class="gallery-image">
+                    </div>
+                    
+                </div>
+            </section>
+
+    
+        </main>
+    </div>
+        <!-- footer section-->
+        <footer>
+
+            <div class="bottom-footer">
+                <p>Copyright &copy; Devloped by <a href="https://www.linkedin.com/in/somesh-bhosale-943268187/"><b>Somesh
+                        Prashant Bhosale</b></a> - All rights reserved</p>
+            </div>
+        </footer>
+    
+    <!-- ----- TYPING JS Link ----- -->
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="/assets/js/main.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '80px',
+            duration: 2000,
+            reset: true
+        });
+
+        // Select all gallery items
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        // Loop through each gallery item and apply ScrollReveal with different delays
+        galleryItems.forEach(function (item, index) {
+            sr.reveal(item, { delay: 200 * index });
+        });
+    });
+    </script>
+
+</body>
+
+</html>
