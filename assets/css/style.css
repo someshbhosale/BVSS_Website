@@ -1,6 +1,6 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 /* ----- VARIABLES ----- */
 :root {
@@ -151,7 +151,7 @@ nav{
 .nav-name{
     font-size: 30px;
     font-weight: 600;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Kalam', cursive;
     color: var(--text-color-third);
     text-shadow: 0px 2px 4px rgb(112, 58, 4);
     
