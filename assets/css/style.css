@@ -475,10 +475,10 @@ h3{
 }
 
 .facilities-info-left img{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    
 }
 
 .facilities-info-right{
@@ -501,10 +501,10 @@ h3{
 }
 
 .facilities-info-right img{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    
 }
 .facilities-info-top{
     position: relative;
@@ -525,10 +525,10 @@ h3{
     color: #777;
 }
 .facilities-info-top img{
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    
 }
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
