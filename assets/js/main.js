@@ -179,6 +179,8 @@ window.addEventListener('scroll', scrollActive);
           margin: 0,
           responsiveClass: true,
           nav: false,
+          dots: true,
+          dotsEach: 1,
           autoplay: true, // Enable autoplay
           autoplayTimeout: 3000, // Set autoplay delay in milliseconds (e.g., 5000ms = 5 seconds)
           responsive: {
@@ -196,7 +198,16 @@ window.addEventListener('scroll', scrollActive);
                   nav: true
               }
           },
-          
+          onInitialized: function (event) {
+            var totalItems = event.item.count;
+            var dotsPerPage = 5;
+    
+            // Check if total items are greater than dotsPerPage
+            if (totalItems > dotsPerPage) {
+              // Hide excess dots using CSS
+              $(".owl-carousel1 .owl-dots .owl-dot:gt(" + (dotsPerPage - 1) + ")").hide();
+            }
+          }
           
       });
   };
