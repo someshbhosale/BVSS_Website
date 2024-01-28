@@ -267,11 +267,11 @@ body.dark .typedText {
 }
 
 
-.featured-text-info{
+.featured-text-info {
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
-    text-justify: auto;
+    text-align: left;
 }
 .featured-text-btn{
     display: flex;
