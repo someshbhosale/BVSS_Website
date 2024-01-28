@@ -4,7 +4,7 @@
 
 /* ----- VARIABLES ----- */
 :root {
-    --body-color: rgb(250, 250, 250);
+    --body-color: linear-gradient(to right bottom , rgb(243, 235, 229), rgb(224, 224, 224)); /* Light linear gradient background */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
@@ -18,10 +18,9 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-
-/* dark mode*/
-body.dark{
-    --body-color: rgb(39, 40, 34); /* Dark background color */
+/* dark mode */
+body.dark {
+    --body-color: linear-gradient(to right bottom , rgb(53, 56, 47), rgb(39, 40, 34)); /* Dark linear gradient background */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(158, 157, 157); /* Light text color for dark background */
@@ -35,6 +34,7 @@ body.dark{
     --first-shadow-color: rgba(0, 0, 0, 0.1);
     --icons-bg: #f4f4f4;
 }
+
 
 .mode{
     display: flex;
@@ -254,7 +254,7 @@ body.dark .nav-name{
     font-family:  'Kalam'; /* Replace 'YourChosenFont' with the desired font family */
     text-transform: capitalize;
     color: #fd981c; /* Updated color code */
-    text-shadow: 0px 3px 4px rgb(112, 58, 4); /* Adjust shadow values as needed */
+    text-shadow: 0px 4px 6px rgb(112, 58, 4); /* Adjust shadow values as needed */
 }
 body.dark .typedText {
     text-shadow: 0 3px 5px rgba(221, 221, 220, 0.8); /* Adjust shadow values for dark mode */
