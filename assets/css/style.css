@@ -4,7 +4,7 @@
 
 /* ----- VARIABLES ----- */
 :root {
-    --body-color: linear-gradient(to right bottom , rgb(255, 255, 255), rgb(224, 224, 224)); /* Light linear gradient background */
+    --body-color: linear-gradient(to bottom , rgb(255, 255, 255), rgb(224, 224, 224)); /* Light linear gradient background */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
@@ -20,7 +20,7 @@
 
 /* dark mode */
 body.dark {
-    --body-color: linear-gradient(to right bottom , rgb(53, 56, 47), rgb(39, 40, 34)); /* Dark linear gradient background */
+    --body-color: linear-gradient(to bottom , rgb(53, 56, 47), rgb(39, 40, 34)); /* Dark linear gradient background */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(158, 157, 157); /* Light text color for dark background */
