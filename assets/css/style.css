@@ -800,6 +800,7 @@ body.dark .bottom-footer {
     padding: 0 10px;
     border-radius: 20px;
     border: 0;
+    width: 90%;
     height: 400px;
     text-align: center; /* Set a fixed height for all cards */
     overflow: auto;
