@@ -22,7 +22,7 @@
 
 /* dark mode*/
 body.dark{
-    --body-color: rgb(39, 40, 34); /* Dark background color */
+    --body-color: linear-gradient(to bottom , rgb(53, 56, 47), rgb(39, 40, 34)); /* Dark background color */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(158, 157, 157); /* Light text color for dark background */
