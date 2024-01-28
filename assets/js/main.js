@@ -75,11 +75,11 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["THE BVSS MARATHA STUDENT'S HOME"],
+  strings : ["THE BVSS MARATHA STUDENT'S HOME","जय जिजाऊ जय शिवराय🚩"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
-  backDelay : 2000
+  backDelay : 4000
 })
 
 
