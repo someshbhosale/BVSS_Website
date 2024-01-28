@@ -4,7 +4,7 @@
 
 /* ----- VARIABLES ----- */
 :root {
-    --body-color: linear-gradient(to right bottom , rgb(243, 235, 229), rgb(224, 224, 224)); /* Light linear gradient background */
+    --body-color: linear-gradient(to right bottom , rgb(255, 255, 255), rgb(224, 224, 224)); /* Light linear gradient background */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
