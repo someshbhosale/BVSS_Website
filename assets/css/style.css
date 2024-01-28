@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
+
 /* ----- VARIABLES ----- */
 :root {
-    --body-color: linear-gradient(to bottom , rgb(255, 255, 255), rgb(224, 224, 224)); /* Light linear gradient background */
+    --body-color: linear-gradient(to bottom , #f0f0f0, #FFFFFF);
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(68, 68, 68);
@@ -18,9 +19,10 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 
-/* dark mode */
-body.dark {
-    --body-color: linear-gradient(to bottom , rgb(53, 56, 47), rgb(39, 40, 34)); /* Dark linear gradient background */
+
+/* dark mode*/
+body.dark{
+    --body-color: rgb(39, 40, 34); /* Dark background color */
     --color-white: rgb(255, 255, 255);
 
     --text-color-second: rgb(158, 157, 157); /* Light text color for dark background */
