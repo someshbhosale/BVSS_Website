@@ -800,8 +800,9 @@ body.dark .bottom-footer {
     padding: 0 10px;
     border-radius: 20px;
     border: 0;
-    height: 350px;
+    height: 400px;
     text-align: center; /* Set a fixed height for all cards */
+    overflow: auto;
 }
 
 .card .card-img-top {

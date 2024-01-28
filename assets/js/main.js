@@ -181,7 +181,8 @@ window.addEventListener('scroll', scrollActive);
           nav: false,
           dots: true,
           dotsEach: 1,
-          autoplay: true, // Enable autoplay
+          autoplay: true,
+          autoplayHoverPause:true,
           autoplayTimeout: 3000, // Set autoplay delay in milliseconds (e.g., 5000ms = 5 seconds)
           responsive: {
               0: {
