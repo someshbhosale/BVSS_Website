@@ -195,6 +195,10 @@ body.dark .nav-name{
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
+    
+}
+body.dark .nav-menu-btn i{
+    color: #ffffff;
 }
 .active-link{
     position: relative;
