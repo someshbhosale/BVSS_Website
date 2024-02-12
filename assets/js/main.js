@@ -94,18 +94,18 @@ const sr = ScrollReveal({
 /* -- HOME -- */
 sr.reveal('.featured-text-card',{})
 sr.reveal('.featured-name',{delay: 100})
-sr.reveal('.featured-text-info',{delay: 200})
-sr.reveal('.featured-text-btn',{delay: 200})
-sr.reveal('.social_icons',{delay: 200})
-sr.reveal('.featured-image',{delay: 300})
-sr.reveal('.about-info-top',{delay: 300})
-sr.reveal('.contact-info',{delay: 300})
+sr.reveal('.featured-text-info',{delay: 100})
+sr.reveal('.featured-text-btn',{delay: 100})
+sr.reveal('.social_icons',{delay: 100})
+sr.reveal('.featured-image',{delay: 100})
+sr.reveal('.about-info-top',{delay: 100})
+sr.reveal('.contact-info',{delay: 100})
 
 
 
 
 /* -- PROJECT BOX -- */
-sr.reveal('.project-box',{interval: 200})
+sr.reveal('.project-box',{interval: 100})
 
 /* -- HEADINGS -- */
 sr.reveal('.top-header',{})
@@ -121,7 +121,7 @@ duration: 2000,
 reset: true
 })
 
-srLeft.reveal('.about-info',{delay: 300})
+srLeft.reveal('.about-info',{delay: 100})
 srLeft.reveal('.contact-info',{delay: 100})
 srLeft.reveal('.map-left-animation',{delay: 100})
 
@@ -136,7 +136,7 @@ reset: true
 
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
-srRight.reveal('.about-info-right',{delay:300})
+srRight.reveal('.about-info-right',{delay:100})
 srRight.reveal('.contact-info',{delay: 100})
 
 
