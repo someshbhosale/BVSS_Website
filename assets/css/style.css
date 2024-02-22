@@ -379,12 +379,12 @@ body.dark .typedText {
 }
 
 
-h3{
+ h3{
     font-size: 20px;
     font-weight: 600;
     color: var(--text-color-second);
-    margin-bottom: 15px;
-}
+    
+} 
 
 /* ----- ABOUT INFO ----- */
 .about-info{
@@ -404,6 +404,11 @@ h3{
     text-align: center;
     font-size: 15px;
     color: #777;
+}
+
+.about-info h3{
+    margin: 10px;
+    
 }
 .about-info img{
     height: 250px;
@@ -429,6 +434,9 @@ h3{
     text-align: center;
     font-size: 15px;
     color: #777;
+}
+.about-info-right h3{
+    margin: 10px;
 }
 .about-info-right img{
     height: 250px;
@@ -460,6 +468,10 @@ h3{
     width: 250px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.about-info-top h3{
+    margin: 10px;
 }
 
 /* Facilities left top right*/
